@@ -27,7 +27,7 @@ class PdfEditor(private val pdfFile: File) {
 
     private fun prepareFilePath(): String {
         val currentDate = LocalDate.now().format(DateTimeFormatter.ofPattern(DATE_SUFFIX_PATTERN))
-        return pdfFile.absolutePath.substring(0, pdfFile.absolutePath.lastIndexOf('.')).plus(currentDate).plus(".pdf")
+        return pdfFile.absolutePath.substring(0, pdfFile.absolutePath.lastIndexOf('.')).plus("-").plus(currentDate).plus(".pdf")
     }
 
 }

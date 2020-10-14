@@ -2,10 +2,17 @@ plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.3.72'
     id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
 }
 
-group 'dev.manka.mateusz'
-version '0.1'
+group 'xyz.manka'
+version '1.0'
+jar {
+    manifest {
+        attributes 'Main-Class' : 'xyz.manka.pdffirstpageswaper.app.MyAppKt'
+    }
+
+}
 
 repositories {
     mavenCentral()

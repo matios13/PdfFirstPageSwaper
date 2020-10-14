@@ -3,7 +3,11 @@
 - Kotlin 🔥
 - TornadoFx for building UI 🖥
 - Apache pdfbox for dealing with pdf 📃
+- ShadowJar for building jar 🚧
 ## How it works
+
+![how it works](readme-app-image.jpg)
+
 There are 3 button:
 1. Chose pdf - select your main pdf
 1. Chose first page - select pdf file that have only one first page
