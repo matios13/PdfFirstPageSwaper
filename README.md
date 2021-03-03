@@ -6,6 +6,7 @@
 - ShadowJar for building jar 🚧
 ## How it works
 
+
 ![how it works](readme-app-image.jpg)
 
 There are 3 button:
@@ -15,7 +16,10 @@ There are 3 button:
     1. removing first page from pdf 1,
     1. adding pdf chosen in button 2 at the beggining of pdf 1 
     1. saving on your computer by default in pdf1Path-{date}.pdf 
-    
+   
+## How to build
+`gradlew shadowJar` 
+it will produce file in build/libs
 ## Project structure
 
 | File                                                                               | purpouse                                                               |
