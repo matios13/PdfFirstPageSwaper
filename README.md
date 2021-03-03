@@ -6,6 +6,7 @@
 - ShadowJar for building jar 🚧
 ## How it works
 
+
 ![how it works](readme-app-image.jpg)
 
 There are 3 button:
@@ -15,7 +16,10 @@ There are 3 button:
     1. removing first page from pdf 1,
     1. adding pdf chosen in button 2 at the beggining of pdf 1 
     1. saving on your computer by default in pdf1Path-{date}.pdf 
-    
+   
+## How to build
+`gradlew shadowJar` 
+it will produce file in build/libs
 ## Project structure
 
 | File                                                                               | purpouse                                                               |
@@ -32,4 +36,4 @@ There are 3 button:
 |PRIMARY_COLOUR          |primary colour of button gradient                                                      | "#e61577"|
 |SECONDARY_COLOUR        |secondary colour of button gradient                                                    |"#992478"|
 |SHADOW_COLOUR           |shadow colour of button                                                                |"#d63382"|
-|FIRST_PAGE_DEFAULT_PATH |default first page path (for now its set for my computer becouse i build it for myself)| "C:\\Users\\matio\\Desktop\\Marti\\PLANŻywienia_Pusty.pdf"|
+|FIRST_PAGE_DEFAULT_PATH |default first page path (for now its set for user home directory)| "home\\Documents\\firstPage.pdf"|
