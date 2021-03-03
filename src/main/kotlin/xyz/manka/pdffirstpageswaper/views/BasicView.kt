@@ -48,8 +48,16 @@ class BasicView : View() {
                         alignment = Pos.TOP_CENTER
                     }
                     action {
+                        val userDirectoryString = System.getProperty("user.home")
+                        var userDirectory = File(userDirectoryString)
                         val files: List<File> =
-                            chooseFile("Select PDF", pdfFileChooser, null, FileChooserMode.Single, scene.window)
+                            chooseFile(
+                                "Select PDF",
+                                pdfFileChooser,
+                                userDirectory,
+                                FileChooserMode.Single,
+                                scene.window
+                            )
                         if (files.isNotEmpty()) {
                             val file = files[0]
                             pdfEditor.set(PdfEditor(file))
@@ -96,8 +104,12 @@ class BasicView : View() {
                 }
                 disableProperty().bind(pdfEditor.isNull)
                 action {
-                    val test = pdfEditor.get().swapFirstPage(firstPage)
-                    println(test)
+                    try {
+                        val newPath = pdfEditor.get().swapFirstPage(firstPage)
+                        information("Podmieniono strone", "nowa strona znajduje się ${newPath}")
+                    } catch (e: Error) {
+                        error("Something went wrong", e.toString())
+                    }
                 }
             }
         }
