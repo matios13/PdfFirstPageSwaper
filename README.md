@@ -1,9 +1,9 @@
 # Simple app for swaping first page of given PDF file with secon one
 ## Build with
-- Kotlin 🔥
-- TornadoFx for building UI 🖥
-- Apache pdfbox for dealing with pdf 📃
-- ShadowJar for building jar 🚧
+-  Kotlin 🔥
+-  TornadoFx for building UI 🖥
+-  Apache pdfbox for dealing with pdf 📃
+-  ShadowJar for building jar 🚧
 ## How it works
 
 
