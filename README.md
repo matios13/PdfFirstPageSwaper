@@ -7,6 +7,8 @@
 ## How it works
 
 
+
+
 ![how it works](readme-app-image.jpg)
 
 There are 3 button:
